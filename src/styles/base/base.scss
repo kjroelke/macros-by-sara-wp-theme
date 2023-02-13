@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+section {
+	padding: 65px 0;
+}
+.bg-dark {
+	background-color: v.$color-primary;
+	.headline {
+		color: white;
+	}
+	.subheadline {
+		color: white;
+	}
+	.text-content {
+		color: white;
+	}
+	* {
+		color: white;
+	}
+}
+.bg-light {
+	background-color: v.$color-secondary;
+	.headline {
+		color: unset;
+	}
+	.subheadline {
+		color: unset;
+	}
+	.text-content {
+		color: unset;
+	}
+}

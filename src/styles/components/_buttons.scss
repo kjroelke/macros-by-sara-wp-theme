@@ -1,0 +1,40 @@
+@use '../abstracts/variables';
+@use '../abstracts/functions' as fn;
+
+.btn {
+	border: 2px solid transparent;
+	border-radius: 1rem;
+	padding: 1rem 1.875rem;
+	display: block;
+	transform: translateY(0);
+	transition: fn.transition(
+		(background-color, border-color, transform, box-shadow, color)
+	);
+	&:hover {
+		box-shadow: 2px 4px 8px rgba(black, 0.35);
+		transform: translateY(-4px);
+	}
+	&__primary {
+		&--fill {
+			@extend .btn;
+			background-color: variables.$color-primary;
+			color: white;
+			a {
+				color: white;
+			}
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: transparent;
+				border-color: variables.$color-primary;
+				color: variables.$color-primary;
+				a {
+					color: variables.$color-primary;
+				}
+			}
+		}
+	}
+}
+a.btn {
+	text-decoration: none;
+}

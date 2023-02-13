@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as v;
+.footer {
+	padding: 65px 0;
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		a {
+			// color: white;
+			text-decoration: none;
+			margin: 0 1rem;
+		}
+	}
+	.logo {
+		color: white;
+	}
+	#copyright {
+	}
+}

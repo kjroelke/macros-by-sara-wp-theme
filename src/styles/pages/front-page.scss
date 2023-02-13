@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as v;
+.hero {
+}
+.problem {
+	padding: 0;
+	&__problem {
+		padding: 65px 0;
+	}
+	&__success {
+		padding: 65px 0;
+	}
+}
+.testimonials {
+	padding: 65px 0;
+}
+.plan {
+}
+.about {
+}
+.instagram {
+	padding: 65px 0;
+}
+.get-started {
+	padding: 65px 0;
+}

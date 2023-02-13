@@ -1,0 +1,20 @@
+{
+  "name": "macros-by-sara-custom-wp-theme",
+  "version": "1.0.0",
+  "description": "A custom wordpress theme",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "KJ Roelke",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^25.3.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "bootstrap": "^5.2.3",
+    "normalize.css": "^8.0.1"
+  }
+}
