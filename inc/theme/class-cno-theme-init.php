@@ -29,7 +29,6 @@ class CNO_Theme_Init {
 		require_once __DIR__ . '/asset-loader/class-asset-loader.php';
 		require_once __DIR__ . '/navwalkers/class-cno-navwalker.php';
 		require_once __DIR__ . '/navwalkers/class-cno-mega-menu.php';
-		require_once dirname( __DIR__, 1 ) . '/component-classes/class-cno-content-sections.php';
 		require_once __DIR__ . '/theme-functions.php';
 	}
 
