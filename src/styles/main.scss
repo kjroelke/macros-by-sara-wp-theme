@@ -1,12 +1,7 @@
-// Include parts of Bootstrap
-@use './vendors/bs-custom';
-@use './vendors/fonts';
-
 @use './abstracts/variables';
 @use './abstracts/mixins';
 @use './abstracts/functions';
 
-@use './base/reset';
 @use './base/typography';
 @use './base/base';
 

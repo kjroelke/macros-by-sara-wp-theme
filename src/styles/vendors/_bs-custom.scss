@@ -1,47 +1,56 @@
-/*
-* 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-*  This is required to bundle without errors
-*/
-@import '../../../node_modules/bootstrap/scss/functions';
+@use '../abstracts/variables' as v;
 
-/*
-* 2. Include any default variable overrides here
-*/
+// Required
+@import 'bootstrap/scss/functions';
 
-/*
-* 3. Include remainder of required Bootstrap stylesheets
-*  This is required to bundle without errors
-*/
-@import '../../../node_modules/bootstrap/scss/variables';
+$primary: v.$color-primary;
+$secondary: v.$color-secondary;
+$link-decoration: none;
+$font-size-base: 1.6rem;
+$font-size-root: 62.5%;
 
-/*
-* 4. Include any default map overrides here
-*/
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/root';
 
-/*
-* 5. Include remainder of required parts
-*  This is required to bundle without errors
-*/
-@import '../../../node_modules/bootstrap/scss/maps';
-@import '../../../node_modules/bootstrap/scss/mixins';
+// Useful Bootstrap Utilities (Optional)
+@import 'bootstrap/scss/bootstrap-reboot';
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/bootstrap-utilities';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/transitions';
+@import 'bootstrap/scss/close';
+@import 'bootstrap/scss/offcanvas';
+@import 'bootstrap/scss/containers';
 
-/*
-* 5a. All the Bootstrap things mapped to :root CSS Variables.
-*/
-// @import '../../../node_modules/bootstrap/scss/root';
-
-/*
-* 6. Optionally include any other parts as needed
-*/
-@import '../../../node_modules/bootstrap/scss/utilities';
-// @import '../../../node_modules/bootstrap/scss/reboot';
-// @import '../../../node_modules/bootstrap/scss/type'; // typography
-// @import '../../../node_modules/bootstrap/scss/images';
-@import '../../../node_modules/bootstrap/scss/containers';
-@import '../../../node_modules/bootstrap/scss/grid';
-// @import '../../../node_modules/bootstrap/scss/helpers';
-
-/*
-* 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-*/
-// @import '../../../node_modules/bootstrap/scss/utilities/api';
+// Optional Bootstrap Modules (w/ Dependencies)
+// @import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/card";
+// @import 'bootstrap/scss/carousel';
+// @import "bootstrap/scss/code";
+// @import "bootstrap/scss/custom-forms";
+@import 'bootstrap/scss/dropdown';
+// @import "bootstrap/scss/forms";
+// @import "bootstrap/scss/images";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/media";
+@import 'bootstrap/scss/modal'; // Requires transitions
+// @import "bootstrap/scss/nav";
+// @import 'bootstrap/scss/navbar'; // Requires nav
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/placeholders";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/print";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/tooltip";
+@import 'bootstrap/scss/type';
